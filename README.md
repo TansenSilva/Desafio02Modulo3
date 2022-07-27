@@ -31,7 +31,7 @@
     .....................venda conluída.................
     Essa venda é armazenda em uma lista e em seguida o programa pergunta ao usuário se ele
     deseja efetuar outra venda. Caso queira ele retoma ao inicio do processo de venda caso
-    não ele abre um medo com 4 opções:
+    não ele abre um medo com 4 opções.
     
     1 - Listar todas as vendas cadastradas.
     2 - Listar todos os vendedores cadastrados.
