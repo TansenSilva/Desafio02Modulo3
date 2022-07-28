@@ -51,7 +51,7 @@ public class main {
 
         //Vendas:
         Venda venda1 = new Venda();
-        vendasFeitas.add(venda1);
+
 
         do {
 
@@ -81,12 +81,16 @@ public class main {
 
             System.out.println("Qual produto?");
             listaDeProdutos.listarProdutos();
-            String produtoPesquisado = input.next();
+            venda1.setProduto(input.next());
+
+            System.out.print("Digite o valor da venda: ");
+            venda1.setValorDaVenda(input.nextDouble());
 
             System.out.println("Qual a data?: ");
             venda1.setDataDeRegistro(input.next());
 
             System.out.println("Venda realizada com sucesso!");
+            vendasFeitas.add(venda1);
 
             System.out.println("Deseja fazer mais alguma venda? 1-sim 2- não ");
             resposta = input.nextInt();
@@ -94,7 +98,7 @@ public class main {
         } while (resposta == 1);
 
 
-        while (c == true) {
+        while (c) {
             System.out.println("Escolha uma das opções:");
             System.out.println("1 - Listar todas as vendas cadastradas.");
             System.out.println("2 - Listar todos os vendedores cadastrados.");
